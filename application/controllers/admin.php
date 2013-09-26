@@ -1,11 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Admin extends CI_Controller {
-
+class Admin extends MY_Controller {
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
+
+        $data['content']='text text text text text text';
+        $data['title']= 'Панель администратора';
+
+        $this->_render($data);
 	}
 }
 
