@@ -15,19 +15,20 @@ class Realty extends MY_Controller {
         $data['content']=$out;
         */
 
-        $data['content']='text text text text text text';
-        $data['title']= 'Список недвижимости';
-        $this->_render($data);
+
+        $this->content ='text text text text text text';
+        $this->title= 'Список недвижимости';
+        $this->_render();
 	}
 
     public function view($id)
     {
         $id = (int)$id;
 
-        $data['content']='text text text text text text';
-        $data['title']= "Просмотр записи $id";
 
-        $this->_render($data);
+        $this->content ='text text text text text text';
+        $this->title= "Просмотр записи $id";
+        $this->_render();
     }
 }
 
